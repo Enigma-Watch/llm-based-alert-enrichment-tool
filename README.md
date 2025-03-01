@@ -87,3 +87,70 @@ The application follows a modular architecture, with distinct components for:
 
 ### Running the App
 
+    ```
+    streamlit run ui/app.py 
+    ```
+
+This will start the Streamlit app in your web browser.
+
+### Configuration
+
+The application is configured via the sidebar in the Streamlit UI. You can configure the following:
+
+*   **UI Theme:** Select a theme (light, dark, blue) for the application interface.
+*   **Alert Source:** Choose the SIEM platform or alert source:
+    *   **Sentinel:** Provide Tenant ID, Client ID, Client Secret, Workspace ID, Resource Group, and Subscription ID.
+    *   **Splunk:** Provide Host, Port, and Token.
+    *   **Elasticsearch:** Provide Host, Port, User, and Password.
+    *   **QRadar:** Provide Host and Token.
+    *   **CSV File:** Upload a CSV file containing alert data and specify the column containing descriptions for entity extraction and risk scoring.
+*   **Threat Intelligence:** Select the Threat Intelligence source:
+    *   **ThreatStream:** Provide API Key and URL.
+    *   **MISP:** Provide URL and Key.
+    *   **AlienVault OTX:** Provide API Key.
+    *   **VirusTotal:** Provide API Key.
+    *   **None:** Disable threat intelligence integration.
+*   **LLM Enrichment:** Select the LLM source:
+    *   **OpenAI:** Provide API Key.
+    *   **Rule-Based:** Configure custom rules in the code.
+    *   **None:** Disable LLM enrichment.
+*   **Risk Scoring Weights:** Adjust the weights for alert severity, threat intelligence reputation, and MITRE ATT&CK techniques in the risk calculation.
+*   **Logging Level:** Select the desired logging level (DEBUG, INFO, WARNING, ERROR).
+
+## Usage
+
+1.  **Enter Alert ID:** In the main panel, enter the ID of the alert you want to enrich.
+2.  **Click "Enrich Alert":** The application will retrieve the alert data, extract entities, enrich it with threat intelligence, map it to MITRE ATT&CK techniques, and calculate a risk score.
+3.  **View Results:** The enriched alert data, extracted entities, threat intelligence reputations, MITRE techniques, and risk score will be displayed in the main panel.
+
+## Customization
+
+*   **Adding a New Connector:** To add support for a new SIEM, TI source, or LLM, you'll need to create a new connector class that implements the appropriate interface (`AlertConnector`, `ThreatIntelConnector`, or `LLMConnector`).
+*   **Customizing Risk Scoring:** You can modify the risk scoring logic in `core/risk_scoring.py` to suit your specific requirements.
+*   **Adding/Modifying CSS Themes:** You can change the CSS themes in the `style/style.css` file.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1.  Fork the repository.
+2.  Create a new branch for your feature or bug fix.
+3.  Make your changes and commit them with descriptive messages.
+4.  Push your changes to your fork.
+5.  Submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Contact
+
+[Rajshekar Vijay] - [rajshekarvijay@protonmail.com] - [https://www.linkedin.com/in/rajshekarv]
+
+## Acknowledgements
+
+*   Streamlit for providing a great framework for building data apps.
+*   The MITRE Corporation for the ATT&CK framework.
+*   The open-source community for the various libraries and resources used in this project.
+
+
