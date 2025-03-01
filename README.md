@@ -86,7 +86,7 @@ The application follows a modular architecture, with distinct components for:
     *   Add your API keys and connection settings to the `.env` file. See the `.env.example` file for a template.
 
 ### Running the App
-   streamlit run ui/app.py 
+   ```streamlit run ui/app.py```
 
 This will start the Streamlit app in your web browser.
 
