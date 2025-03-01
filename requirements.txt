@@ -7,3 +7,9 @@ streamlit # If you plan to use Streamlit for UI
 python-dotenv
 azure-mgmt-resourcegraph  # Example: If you use Azure Resource Graph
 azure-mgmt-securityinsight # Type of call
+openai
+pandas
+#Add the specific library you need to implement the connections here:
+splunklib
+elasticsearch
+py-qradar
