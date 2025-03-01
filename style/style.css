@@ -1,0 +1,126 @@
+/* style/style.css */
+
+/* --- Theme 1: Dark Mode --- */
+.dark-mode {
+    background-color: #262730;
+    color: #f0f2f6;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+    color: #f0f2f6;
+}
+
+.dark-mode .stTextInput>label {
+    color: #f0f2f6;
+}
+
+.dark-mode .stButton>button {
+    background-color: #6243FF;
+    color: white;
+}
+
+.dark-mode .stButton>button:hover {
+    background-color: #4a32b4;
+}
+
+.dark-mode .stSlider>label {
+    color: #f0f2f6;
+}
+
+.dark-mode .streamlit-expanderHeader {
+    color: #f0f2f6;
+}
+
+.dark-mode .streamlit-expanderContent {
+    color: #d0d0d0;
+}
+
+.dark-mode .sidebar .sidebar-content {
+    background-color: #31333F;
+    color: #f0f2f6;
+}
+
+/* --- Theme 2: Light Mode (Default) --- */
+.light-mode {
+    background-color: #f0f2f6;
+    color: #31333F;
+}
+
+.light-mode h1, .light-mode h2, .light-mode h3, .light-mode h4, .light-mode h5, .light-mode h6 {
+    color: #262730;
+}
+
+.light-mode .stTextInput>label {
+    color: #31333F;
+}
+
+.light-mode .stButton>button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.light-mode .stButton>button:hover {
+    background-color: #3e8e41;
+}
+
+.light-mode .stSlider>label {
+    color: #31333F;
+}
+
+.light-mode .streamlit-expanderHeader {
+    color: #31333F;
+}
+
+.light-mode .streamlit-expanderContent {
+    color: #555;
+}
+
+.light-mode .sidebar .sidebar-content {
+    background-color: #e0e2e6;
+    color: #31333F;
+}
+
+/* --- Theme 3: Blue Theme --- */
+.blue-mode {
+    background-color: #E1F5FE; /* Light blue */
+    color: #1A237E; /* Dark blue text */
+}
+
+.blue-mode h1, .blue-mode h2, .blue-mode h3, .blue-mode h4, .blue-mode h5, .blue-mode h6 {
+    color: #1A237E;
+}
+
+.blue-mode .stTextInput>label {
+    color: #1A237E;
+}
+
+.blue-mode .stButton>button {
+    background-color: #0277BD; /* Medium blue */
+    color: white;
+}
+
+.blue-mode .stButton>button:hover {
+    background-color: #01579B; /* Darker blue */
+}
+
+.blue-mode .stSlider>label {
+    color: #1A237E;
+}
+
+.blue-mode .streamlit-expanderHeader {
+    color: #1A237E;
+}
+
+.blue-mode .streamlit-expanderContent {
+    color: #3D5AFE; /* A lighter blue */
+}
+
+.blue-mode .sidebar .sidebar-content {
+    background-color: #B3E5FC; /* A very light blue for the sidebar */
+    color: #1A237E;
+}
+
+/* General Styles that Apply to All Themes */
+body {
+    font-family: sans-serif;
+}

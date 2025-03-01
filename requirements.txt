@@ -1,0 +1,9 @@
+transformers
+requests
+azure-identity
+azure-graphrbac
+Flask  # If you plan to use Flask for UI
+streamlit # If you plan to use Streamlit for UI
+python-dotenv
+azure-mgmt-resourcegraph  # Example: If you use Azure Resource Graph
+azure-mgmt-securityinsight # Type of call
