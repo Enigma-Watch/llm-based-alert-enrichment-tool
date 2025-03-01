@@ -87,9 +87,9 @@ The application follows a modular architecture, with distinct components for:
 
 ### Running the App
 
-    ```
+    
     streamlit run ui/app.py
-    ```
+    
 
 This will start the Streamlit app in your web browser.
 
